@@ -8,7 +8,7 @@ from app.models import Station, Sensor
 
 # Test cases for /stations
 class StationModelCase(unittest.TestCase):
-    #S Set up the database and a logger
+    # Set up the database and a logger
     def setUp(self):
         app.config.from_object(TestingConfig)
         self.app = app
