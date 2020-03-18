@@ -13,6 +13,7 @@ class dataGenerator:
         # Possible sensor names
         sensorref = ['Temprature', 'Humidity', 'WindSpeed', 'UV']
         
+        # Add 100 stations as example
         for x in range(100):
             # Create random number of random types of sensors
             sensors= [Sensor(reads=sample) for sample in random.sample(sensorref,random.randint(0,4))]
